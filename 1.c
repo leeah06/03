@@ -2,16 +2,16 @@
 
 int main(void)
 {
-    int input_int;
-    float input_float;
+    char c;
+    int i;
 
-    printf("enter an integer: ");
-    scanf("%d", &input_int);
+    printf("input a number :");
+    scanf("%c", &c);
 
-    printf("enter a float: ");
-    scanf("%f", &input_float);
+    // [빈칸 답안] c에 저장된 문자 값을 숫자로 변환하는 식
+    i = c - '0'; 
 
-    printf("integer %d, float: %f\n", input_int, input_float);
+    printf("The input number is %i\n", i);
 
     return 0;
 }
