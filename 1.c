@@ -3,15 +3,16 @@
 int main(void)
 {
     char c;
-    int i;
+    char next_c;
 
-    printf("input a number :");
+    printf("enter a character: ");
     scanf("%c", &c);
 
-    // [빈칸 답안] c에 저장된 문자 값을 숫자로 변환하는 식
-    i = c - '0'; 
+    // 다음 문자를 계산
+    next_c = c + 1;
 
-    printf("The input number is %i\n", i);
+    // c와 next_c를 각각 문(%c)와 정수(%i) 형태로 출력
+    printf("the next character of %c (%i) is %c (%i)\n", c, c, next_c, next_c);
 
     return 0;
 }
