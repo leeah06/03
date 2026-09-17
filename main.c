@@ -1,10 +1,19 @@
 #include <stdio.h>
 
-int main(void) {
-    char c, next;
-    printf("enter a character : ");
-    scanf("%c", &c);
-    next = c + 1;
-    printf("the next character of %c (%d) is %c (%d)\n", c, c, next, next);
+int main(void)
+{
+    int a, b;
+    float result;
+
+    printf("Enter numerator : ");
+    scanf("%d", &a);
+
+    printf("Enter denominator : ");
+    scanf("%d", &b);
+
+    result = (float)a / (float)b;
+
+    printf("The result of division is %f\n", result);
+
     return 0;
 }
