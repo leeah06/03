@@ -1,16 +1,13 @@
 #include <stdio.h>
+int main(void)
+{
+    char c;
+    int i;
 
-int main(void) {
-    int input_int;
-    float input_float;
+    printf("input a number : ");
+    scanf("%c", &c);
 
-    printf("enter an integer : ");
-    scanf("%d", &input_int);
-
-    printf("enter a float : ");
-    scanf("%f", &input_float);
-
-    printf("integer : %d, float : %f\n", input_int, input_float);
-
+    i = c - '0'; // Convert character to integer
+    printf("The input number is %d\n", i);
     return 0;
 }
